@@ -100,8 +100,8 @@ nav a {
 
 .carousel {
   display: flex;
-  width: 80vw;
-  height: 1100px;
+  width: 85vw;
+  height: 1200px;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
@@ -109,7 +109,7 @@ nav a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 150px;
   margin-bottom: 30px;
 }
 
@@ -120,8 +120,8 @@ nav a {
 }
 
 .carousel-track img {
-  width: 80vw;
-  height: 1150px;
+  width: 85vw;
+  height: 1200px;
   object-fit: fill;
   flex-shrink: 0;
   border-radius: 5px;
@@ -135,8 +135,7 @@ nav a {
   transform: translateX(-50%);
   border-radius: 10px;
   display: flex;
-  padding: 2.4em;
-  gap: 80px;
+  padding: 2.5em;
   justify-content: center;
   align-items: center;
   background-color: #720a791d;
@@ -174,45 +173,53 @@ nav a {
 
 .arrow {
   cursor: pointer;
-  height: 420px;
-  width: 40px;
-  position: relative;
-  transition: 0.2s;
-  z-index: 10;
-}
-
-.arrow:hover {
-  opacity: 0.7;
-  transform: scale(1.2) translateY(-4px);
+  height: 100px;
+  width: 10px; /* Fixed size */
+  position: absolute;
+  z-index: 10; /* Ensures it stays above other elements */
+  box-sizing: border-box; /* Ensures padding/borders don’t affect dimensions */
+  transition: transform 0.2s, opacity 0.2s;
+  padding: 1em;
 }
 
 .arrow-top,
 .arrow-bottom {
   background-color: #767676;
-  height: 5px;
-  left: 0;
+  height: 2.5px; /* Fixed height for consistent rendering */
   position: absolute;
-  top: 50%;
-  width: 100%;
+  width: 100%; /* Width remains relative to `.arrow` width */
+  top: 50%; /* Center in the arrow container */
+  transform-origin: center right; /* Consistent origin for rotation */
 }
 
 .arrow-top {
-  transform: rotate(45deg);
-  transform-origin: bottom right;
+  transform: rotate(45deg); /* Keep rotation stable */
 }
 
 .arrow-bottom {
   transform: rotate(-45deg);
-  transform-origin: top right;
 }
 
 .arrow-left {
-  transform: rotate(180deg) translateY(-4px);
+  position: absolute;
+  left: 45px; /* Adds space from the left edge */
+  transform: rotate(180deg) translateY(-2.5px); /* Rotation for left arrow */
+}
+
+.arrow-right {
+  position: absolute;
+  right: 45px; /* Adds space from the right edge */
 }
 
 .arrow-left:hover {
-  transform: rotate(180deg) scale(1.1) translateY(4px);
+  transform: rotate(180deg) scale(1.1) translateY(4px); /* Stable scaling */
 }
+
+.arrow-right:hover {
+  
+  transform: scale(1.2) translateY(-4px); /* Stable scaling */
+}
+
 
 .article-header {
   display: flex;
