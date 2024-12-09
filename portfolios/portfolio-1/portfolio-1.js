@@ -23,7 +23,7 @@ function updateImage() {
 }
 
 arrow_forward.addEventListener("click", () => {
-  console.log("forward");
+ 
   currentSlideIndex = (currentSlideIndex + 1) % images.length;
   updateImage();
 });
