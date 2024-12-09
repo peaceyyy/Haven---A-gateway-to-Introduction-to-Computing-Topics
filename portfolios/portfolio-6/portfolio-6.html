@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Portfolio #6 - Comparative Study on Different Types of Computers
+  </title>
+  <link rel="stylesheet" href="portfolio-6.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="prevent-select">
+      <ul class="main-nav">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#portfolios">Portfolios</a></li>
+        <li><a href="../../tables.html">Tables</a></li>
+      </ul>
+      <ul class="secondary-nav">
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container-container">
+    <div class="toggle-container">
+      <input type="radio" name="table-toggle" id="table-toggle-1" class="table-toggle" checked>
+      <input type="radio" name="table-toggle" id="table-toggle-2" class="table-toggle">
+      <div class="toggle-buttons">
+        <label for="table-toggle-1" class="toggle-label">Table 1</label>
+        <label for="table-toggle-2" class="toggle-label">Table 2</label>
+      </div>
+      <div id="table1-container">
+        <div class="container">
+          <table class="table-container">
+            <tr>
+              <th>Type of Computer</th>
+              <th>Name/Brand</th>
+              <th>Build</th>
+              <th>CPU</th>
+              <th>Memory</th>
+              <th>Processing Speed</th>
+              <th>Calculating Power</th>
+              <th>Working Principle</th>
+              <th>Energy Consumption</th>
+              <th>Field of Use</th>
+            </tr>
+            <tr>
+              <td>Mainframe Computers</td>
+              <td>UNIVAC 9400</td>
+              <td>Large cabinet-like structure</td>
+              <td>Early transistor-based</td>
+              <td>24,576 bytes and is expandable to 131,072 byte</td>
+              <td>
+                Tape read or write speed ranges from 34,160 to 192,000 bytes per
+                second
+              </td>
+              <td>High throughput, supports large data operations</td>
+              <td>Centralized computing for large-scale enterprises</td>
+              <td>125 kW</td>
+              <td>
+                It is a commercial data-processing computer used for data
+                storage, business transactions, scientific calculations
+              </td>
+            </tr>
+            <tr>
+              <td>Mini Computers</td>
+              <td>Honeywell Level 6</td>
+              <td>Desk/washing machine-sized</td>
+              <td>16/32-bit architecture</td>
+              <td>Up to 64K words (KW) of MOS memory</td>
+              <td>Cycle time of 650 nanoseconds</td>
+              <td>
+                Can produce output at up to 18,000 lines per minute and is
+                moderate speed for its time
+              </td>
+              <td>Moderate, tailored for small enterprises</td>
+              <td>1 - 2 kW</td>
+              <td>
+                Used in the 1960s and 1970s in smaller businesses, research
+                institutions, and universities for applications such as data
+                processing, and office automation.
+              </td>
+            </tr>
+            <tr>
+              <td>Server</td>
+              <td>Dell EMC PowerEdge R940</td>
+              <td>Rack-mounted system with multiple bays</td>
+              <td>
+                Two or four Intel Xeon Scalable Processors, up to 28 cores per
+                socket
+              </td>
+              <td>Maximum memory capacity of 15.36TB</td>
+              <td>
+                Supports two DIMMs per channel max at 2666 Megatransers/second
+              </td>
+              <td>High, focused on enterprise-level workloads</td>
+              <td>Multi-user, high availability, and performance</td>
+              <td>
+                550 to 1,200 watts of power, depending on configuration,
+                workload, and number of processors installed.
+              </td>
+              <td>
+                Data warehouses, e-commerce, databases, and high-performance
+                computing
+              </td>
+            </tr>
+            <tr>
+              <td>Workstations</td>
+              <td>HP Z4 G5</td>
+              <td>Tower-style desktop unit. Looks just like a normal CPU</td>
+              <td>Intel Xeon w7-2475X Processor With 26 cores</td>
+              <td>512GB DDR5 memory</td>
+              <td>2.6 GHz base frequency, up to 4.6 GHz frequency</td>
+              <td>
+                Moderate to highly specialized tasks. Computational performance
+                between 200 to 500 GFLOPS
+              </td>
+              <td>Task-specific, incredibly high computational power</td>
+              <td>465 W, 750 W, or 1000 W 90% efficient power supplies</td>
+              <td>
+                Machine learning, video editing, scientific, financial
+                simulation, and analysis.
+              </td>
+            </tr>
+            <tr>
+              <td>Micro Computers</td>
+              <td>Altair 8800</td>
+              <td>
+                Boxy, rectangular metal chassis with toggle switches and LEDs on
+                the front panel
+              </td>
+              <td>Intel 8080 microprocessor</td>
+              <td>256 bytes of RAM (expandable to 64 KB).</td>
+              <td>Low (2 MHz). Approximately 80,000 operations per second</td>
+              <td>Could perform basic arithmetic and logical operations</td>
+              <td>
+                Operated using binary machine code, required manual input for
+                programs utilized dynamic RAM chips for memory storage, and
+                employed a bus-based architecture
+              </td>
+              <td>Approximately 100-150 watts</td>
+              <td>
+                Early personal computing, basic data processing, hobbyist,
+                learning
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- Table 2 Container -->
+      <div id="table2-container">
+        <div class="container">
+          <table class="table-container">
+            <tr>
+              <th>Type of Computer</th>
+              <th>Sample Image</th>
+              <th>Description</th>
+              <th>Usage</th>
+            </tr>
+            <tr>
+              <td>Supercomputer</td>
+              <td><img src="computer-images/Sunway TaihuLight.jpg" alt="Supercomputer Image"></td>
+              </td>
+              <td>Supercomputers are the pinnacle, the peak, of computational power, designed to handle extraordinarily
+                complex and resource-intensive tasks. These machines typically feature thousands of processors working in
+                parallel, enabling them to perform trillions of calculations per second, far surpassing the capabilities
+                of personal computers or even most, if not all/ server systems.
+                The Sunway TaihuLight, a Chinese supercomputer, housed at the National Supercomputing Center in Wuxi, was
+                the world’s fastest supercomputer from 2016 to 2018. It delivers a peak performance of 125 petaflops,
+                making it 125,000 times more powerful than top consumer-grade computers. Powered by over 10 million cores,
+                it was the first supercomputer to exceed 100 petaflops without relying on foreign chips. It also bears a
+                clock speed of 1.45 GHz per processor and an energy-efficient design consuming 15.37 megawatts.
+              </td>
+              <td>They are used in fields such as scientific research, climate modeling, simulations, and data analysis,
+                where vast amounts of data need to be processed at incredibly high speeds. Sunway TaihuLight was
+                specifically used for weather forecasting, oilfield analysis, and nuclear weapons design. It was also used
+                in Earth, ocean, and climate modeling and atomic simulations, which allowed for breakthroughs in
+                environmental research, energy exploration, and scientific innovation.
+                Supercomputers are vital for advancing knowledge in physics, medicine, and artificial intelligence by
+                providing the raw processing power needed for simulations and calculations on a massive scale. </td>
+            </tr>
+            <td>Mainframe Computers</td>
+            <td><img src="computer-images/UNIVAC.jpg" alt="Mainframe Computers Image"></td>
+            <td>Mainframe computers are large, robust systems designed for processing and managing vast amounts of data,
+              primarily used by large organizations due to their reliability, scalability, and capacity to support
+              thousands of users. They excel in executing complex calculations and large-scale data analysis with minimal
+              downtime, making them ideal for high-speed processing applications. The UNIVAC series, including the UNIVAC
+              9400, represents some of the earliest general-purpose mainframes, showcasing pioneering technical
+              capabilities with notable processing speeds and memory capacities.
+            </td>
+            <td>Due to their strengths, mainframes are commonly used by IT organizations to run critical applications.
+              These applications often involve customer order processing, financial transactions, production, and
+              inventory management. The UNIVAC systems, in particular, were versatile and could handle multiple programs,
+              real-time processing, and data communications. They were widely used for tasks like data storage, business
+              transactions, and scientific calculations because of their speed and support for advanced peripherals like
+              punched card readers and tape drives.
+            </td>
+            <tr>
+              <td>Mini Computers</td>
+              <td><img src="computer-images/Honeywell Level 6.jpg" alt="Mini Computers Image"></td>
+              <td>Mini computers are mid-sized systems designed to offer a balance between performance and
+                cost-effectiveness. They are smaller and less expensive than mainframes but still capable of handling
+                multiple tasks and supporting multiple users simultaneously. Despite their smaller size, minicomputers
+                provided powerful computing capabilities and contributed to the normalization of access to computers.
+                The Honeywell Level 6 is a classic example of an advanced mini-computer, introduced in the mid-1970s.
+                Initially designed with a 16-bit architecture, it was later upgraded to a 32-bit system, offering
+                substantial performance improvements. These systems supported up to 64 K words (KW) of MOS memory with a
+                cycle time of 650 nanoseconds.
+              </td>
+              <td>These systems were widely used in the 1960s and 1970s in smaller businesses, research institutions, and
+                universities for a variety of applications such as data processing, and office automation. They also
+                served as media centers, gaming devices, and servers for small businesses and their flexibility made them
+                great for home automation, Internet of Things (IoT) projects, and portable workstations.
+                Server computers such as the PowerEdge R940 excel in tasks like e-commerce, data warehousing, CRM
+                databases, and high-performance computing (HPC). Its scalable architecture, powerful storage options, and
+                embedded management tools make it ideal for enterprises requiring real-time processing, large-scale data
+                handling, and future-proof scalability in their infrastructure.
+              </td>
+            </tr>
+            <tr>
+              <td>Server</td>
+              <td><img src="computer-images/Dell EMC PowerEdge R940.jpg" alt="Server Image"></td>
+              <td>Server computers are essential systems designed to manage, store, and process data for multiple users or
+                devices within a network, emphasizing reliability and scalability to accommodate heavy workloads. Unlike
+                personal computers, they operate continuously and feature significant storage and processing capabilities.
+                The Dell EMC PowerEdge R940 exemplifies such a server, equipped with four 2nd Generation Intel Scalable
+                processors, supporting up to 28 cores each, and allowing for a maximum memory of 15.36TB. It also includes
+                extensive storage options with up to 24 NVMe PCIe SSDs capable of 184.32TB, making it suitable for
+                mission-critical and data-intensive applications.
+              </td>
+              <td>Server computers such as the PowerEdge R940 excel in tasks like e-commerce, data warehousing, CRM
+                databases, and high-performance computing (HPC). Its scalable architecture, powerful storage options, and
+                embedded management tools make it ideal for enterprises requiring real-time processing, large-scale data
+                handling, and future-proof scalability in their infrastructure.</td>
+            <tr>
+              <td>Workstations</td>
+              <td><img src="computer-images/HP Z4 G5.jpg" alt="Workstations Image"></td>
+              <td>Workstations are high-performance computers designed to handle demanding tasks that require greater
+                processing power, memory, and graphics capabilities than typical personal computers. They are tailored for
+                intensive applications, providing reliability and efficiency for complex problems with high precision and
+                speed.
+                One example would be the HP Z4 G5 Workstation. It is a powerful desktop made for intense professional
+                tasks like AI development, video editing, and scientific simulations. It can have up to 26 cores with
+                advanced Intel W7 processors, support for 512GB DDR5 memory, and 92TB of storage.
+              </td>
+              <td>Workstations such as the Z4 G5 are excellent for rendering, simulations, and preparing large datasets.
+                They are typically used by professionals in fields like engineering, design, research, and scientific
+                computing, where complex simulations, high-end graphics rendering, or data analysis are essential.
+              </Td>
+            </tr>
+            <tr>
+              <td>Micro Computers</td>
+              <td><img src="computer-images/Altair 8800.jpg" alt="Micro Computers Image"></td>
+              <td>Microcomputers, commonly referred to as personal computers, are compact systems designed for individual
+                use. They are powered by microprocessors, which integrate the central processing unit onto a single chip,
+                offering efficient performance for general-purpose tasks. These systems typically feature lower processing
+                power and memory compared to workstations or servers but excel in affordability, ease of use, and
+                versatility.
+                An example would be the Altair 8800, which is widely regarded as the first commercially successful
+                personal computer, marking the start of the microcomputer revolution in the 1970s. Released in 1975 by
+                MITS, it featured an Intel 8080 microprocessor and 256 bytes of RAM (expandable to 64 KB).
+              </td>
+              <td>Microcomputers like the Altair 8800 are small computers used for various tasks, including personal
+                computing, business applications, and education, from basic word processing and gaming to more advanced
+                applications like software development and multimedia editing. Their popularization made computing
+                available to families, small businesses, and students.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="computer-stand">
+    <div class="computer-stand-base"></div>
+  </div>
+
+
+  <div class="header">
+    <h2>
+      Comparative Study on Different of Computers ○ Portfolio #6
+    </h2>
+  </div>
+
+  <article class="article-container">
+    <h2>Introduction</h2>
+    <p>
+      When we think of computers, we immediately think of household personal
+      computers. However, the world of computers is far more diverse,
+      encompassing a wide range of machines with unique capabilities and
+      purposes. A computer, at its core, is a programmable device designed to
+      manipulate symbols and perform tasks according to predefined
+      instructions. Its key characteristics include:
+    </p>
+
+    <ul>
+      <li>
+        Responding to a specific set of instructions in a well-defined manner.
+      </li>
+      <li>Executing prerecorded lists of instructions (programs).</li>
+      <li>
+        Storing and retrieving large amounts of data quickly and reliably.
+      </li>
+    </ul>
+    <p>
+      These capabilities enable computers to perform complex and repetitive
+      tasks with remarkable precision and speed. Computers can be classified
+      based on their size, computing power, complexity, and purpose. These
+      classifications include small microcomputers for personal use and large
+      supercomputers that can tackle complex scientific problems.
+      Understanding the similarities and differences between these types of
+      computers provides valuable insights into their specific applications
+      and which ones are best suited for particular fields and tasks. For
+      computer science students like us, this knowledge not only satisfies
+      curiosity but also establishes a foundational understanding of the
+      evolution and limits of computing power. By exploring this diversity and
+      simply having an awareness of the current state of our computing power,
+      we gain an appreciation of current technological achievements and a
+      clearer vision of the possibilities of innovation in the future. This
+      awareness is very important as we strive to contribute to the
+      ever-expanding and complex but very rich world of computing.
+    </p>
+    <hr />
+
+    <h2>Discussion</h2>
+    <p>
+      The table above shows the remarkable diversity in computer types,
+      illustrating their design, capabilities, and purpose across different
+      areas of application. Starting with the Sunway TaihuLight, a
+      supercomputer with unmatched processing power and parallel architecture,
+      these machines operate at the peak of computational science, solving
+      problems like weather forecasting and advanced AI development. Mainframe
+      computers, such as the UNIVAC 9400, although fairly old, follow with
+      their focus on computing for large enterprises so they focus on offering
+      high throughput and reliable data processing for business transactions
+      and scientific calculations while Mini computers, like the Honeywell
+      Level 6, instead demonstrate a scaled-down, cost-effective but more
+      flexible approach to computing, making it geared towards smaller
+      businesses and research institutions for simpler tasks like data
+      processing and office automation. Lastly, the Altair 8800 shows the
+      early days of personal computing, providing a low-cost option for
+      hobbyists and early programmers to learn and create. We then move on to
+      more modern machines, which are more tailored toward businesses and
+      individuals. Server computers like the Dell EMC PowerEdge R940 offer
+      strong support for many users. They have high memory and processing
+      power, making them ideal for data warehouses and e-commerce.
+      Workstations, such as the HP Z4 G5, find a middle ground between
+      personal and professional use. They perform well in specialized areas
+      like video editing and machine learning while using moderate energy. The
+      table highlights the variety of computer types and stresses the
+      importance of understanding their classifications, abilities, and uses.
+      From powerful supercomputers like the Sunway TaihuLight to basic
+      microcomputers like the Altair 8800, each type has a unique role in
+      improving technology, solving problems, or serving specific user needs.
+      Knowing these differences helps us pick the right computer for various
+      jobs, whether it's a workstation for creative work, a server for
+      managing large amounts of data, or a mini-computer for small businesses.
+      By looking at these systems side by side, we can better appreciate the
+      technological advances of our time and how each type contributes to
+      different fields. This understanding is not just interesting but also
+      serves as a practical guide for selecting the best computer for certain
+      tasks and industries. For students and professionals in computer
+      science, grasping these classifications helps us innovate within these
+      systems, make the best use of them, and expand their capabilities.
+    </p>
+
+    <ul class="summary">
+      <li>a. Mini Computer</li>
+      <p>
+        - Minicomputers are versatile mid-sized systems that bridge the gap
+        between large mainframes and smaller personal computers. They provide
+        moderate processing speed and memory capacity, making them ideal for
+        managing small databases, conducting scientific calculations, and
+        serving as servers for small organizations. While their power
+        consumption is higher than that of microcomputers, it is lower than
+        servers, offering a good balance between performance and efficiency. A
+        definition from the Encyclopedia Britannica may have put it best:
+        “Minicomputers are a computer that is smaller, less expensive, and
+        less powerful than a mainframe or supercomputer, but more expensive
+        and more powerful than a personal computer.”
+      </p>
+
+      <li>b. Micro Computer</li>
+      <p>
+        - Microcomputers, also known as personal computers, are designed for
+        individual use and are the most widely recognized type of computer
+        They generally consist of a single CPU, data memory, I/O buses, etc.
+        They are equipped with lower processing speeds and memory capacities
+        compared to workstations or servers, but they are highly affordable
+        and power-efficient. These systems are ideal for everyday tasks like
+        word processing, internet browsing, and basic multimedia applications.
+        Their portability and user-friendly interfaces have made them
+        essential tools for homes, schools, and offices and their types
+        include tablet and smartphone microcomputers, desktop microcomputers,
+        workstations, and server microcomputers, etc. Microcomputers are
+        relatively inexpensive compared to other kinds of computers but again,
+        the tradeoff is that they have limited processing power and are
+        generally not suitable for complex tasks.
+      </p>
+
+      <li>c. Workstation</li>
+      <p>
+        - Workstations are high-performance computers designed for demanding
+        tasks such as 3D rendering, CAD design, and scientific simulations.
+        They are equipped with powerful processors, substantial memory
+        capacities, and advanced graphics, offering faster speeds than micro
+        and minicomputers. Workstations generally consume more power and come
+        at a higher cost, making them ideal for professionals who require
+        exceptional computational precision and speed. These systems are
+        top-of-the-line and often feature top-tier processors, ample RAM,
+        multiple hard drives, and specialized cards for tasks like audio,
+        video, or processing. Their ability to handle complex applications
+        smoothly and efficiently reduces system crashes and hardware failures,
+        while their multitasking capabilities help increase productivity hence
+        the ‘work’ in the workstation. Workstations are particularly useful in
+        fields like engineering, media production, and research, where high
+        computational power and scalability are critical.
+      </p>
+
+      <li>d. Server</li>
+      <p>
+        - Servers are powerful systems designed to efficiently manage and
+        deliver data, services, or applications to many users over a network.
+        With high-performance multi-core processors, they provide fast
+        processing speeds and handle multiple tasks simultaneously. Their
+        substantial memory capacities, often reaching several terabytes,
+        enable them to store extensive data for multi-user environments.
+        Although servers consume more power than other systems, their energy
+        use is essential for critical operations like hosting websites,
+        managing databases, and supporting cloud computing. Since they are
+        built for reliability and scalability, servers are the backbone of IT
+        infrastructures in organizations of all sizes, ensuring smooth
+        operations and effective management of resources.
+      </p>
+
+      <ul>
+        <p style="text-decoration: underline">So if we are to summarize:</p>
+
+        <li>
+          Mini Computers bridge the gap between microcomputers and larger
+          systems, often supporting multiple users.
+        </li>
+        <li>
+          Micro Computers (e.g., desktops, laptops) prioritize affordability,
+          portability, and usability over performance.
+        </li>
+        <li>
+          Workstations are specialized, high-performance microcomputers
+          tailored for professional and specific applications.
+        </li>
+        <li>
+          Servers are built for reliability, scalability, and handling
+          demanding network-based tasks
+        </li>
+      </ul>
+    </ul>
+  </article>
+
+  <div class="header">
+    <h2>References</h2>
+  </div>
+
+  <div class="references">
+    <ul>
+      <li>
+        Ahmed, B. (2024).
+        <a href="https://www.scribd.com/document/703051959/2#:~:text=A%20minicomputer%2C%20or%20colloquially%20mini,direct%20competitors"
+          target="_blank">
+          Scribd.
+        </a>
+      </li>
+      <li>
+        Altair 8800: The Computer that Sparked the Microcomputer Revolution.
+        (2024).
+        <a href="https://historyofcomputers.eu/hardware/altair-8800/" target="_blank">
+          History of Computers.
+        </a>
+      </li>
+      <li>
+        CHAPTER-2 © Atish Shrestha. (n.d.).
+        <a href="https://atishvision.wordpress.com/wp-content/uploads/2020/07/classification-of-computer_student-copy.pdf"
+          target="_blank">
+          Atishvision.wordpress.com.
+        </a>
+      </li>
+      <li>
+        Computers types. (n.d.).
+        <a href="https://www.cs.cmu.edu/~fgandon/documents/lecture/uk1999/computers_types/computers_types.pdf"
+          target="_blank">
+          CMU.edu.
+        </a>
+      </li>
+      <li>
+        Dell EMC PowerEdge R940 Technical Guide.
+        <a href="https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/PowerEdge-R940-Technical-Guide.pdf"
+          target="_blank">
+          Dell.com.
+        </a>
+      </li>
+      <li>
+        Dongarra, J. (2016).
+        <a href="https://www.netlib.org/utk/people/JackDongarra/PAPERS/sunway-report-2016.pdf" target="_blank">
+          Report on the Sunway TaihuLight System.
+        </a>
+      </li>
+      <li>
+        GeeksforGeeks. (2021, January 11).
+        <a href="https://www.geeksforgeeks.org/difference-between-micro-computer-and-mini-computer/" target="_blank">
+          Difference between Micro Computer and Mini Computer.
+        </a>
+      </li>
+      <li>
+        HP Z4 G5 Workstation Desktop PC Data Sheet. (n.d.).
+        <a href="https://h20195.www2.hp.com/v2/GetPDF.aspx/c08479384" target="_blank">
+          HP.com.
+        </a>
+      </li>
+      <li>
+        Level 6 Minicomputer Handbook (1976).
+        <a href="https://bitsavers.computerhistory.org/pdf/honeywell/small_systems/series60level6/AS-22_Level6MiniHbk_Jan76.pdf"
+          target="_blank">
+          Bitsavers.computerhistory.org.
+        </a>
+      </li>
+      <li>
+        Magoun, Alexander. (2015).
+        <a href="http://insight.ieeeusa.org/insight/content/views/175460" target="_blank">
+          What is a Minicomputer?. IEEE-USA InSight.
+        </a>
+      </li>
+      <li>
+        POWEREDGE R940 Spec Sheet. (n.d.).
+        <a href="https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/aa/poweredge-r940-spec-sheet.pdf"
+          target="_blank">
+          Dell.com.
+        </a>
+      </li>
+      <li>
+        Sharma, A. (2024).
+        <a href="https://www.scribd.com/presentation/595606477/Workstation-and-Server" target="_blank">
+          Workstation and Server. Scribd.
+        </a>
+      </li>
+      <li>
+        Sunway TaihuLight: China’s Fastest Supercomputer for UPSC. (2022).
+        <a href="https://testbook.com/ias-preparation/sunway-taihulight#:~:text=Sunway%20TaihuLight%20Used%20For&text=The%20Chinese%20supercomputer%20is%20mainly,Designing%20the%20nuclear%20weapons"
+          target="_blank">
+          Testbook.com.
+        </a>
+      </li>
+      <li>
+        Technikum29-Team. (2023).
+        <a href="https://www.technikum29.de/en/computer/univac9400.php" target="_blank">
+          UNIVAC mainframe computer, data center - technikum29.
+        </a>
+      </li>
+      <li>
+        UNIVAC SYSTEM. (n.d.).
+        <a href="https://s3data.computerhistory.org/brochures/univac.9400.1969.102646106.pdf" target="_blank">
+          Computerhistory.org.
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

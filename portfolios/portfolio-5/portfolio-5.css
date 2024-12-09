@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap");
+
+@font-face {
+  font-family: "CooperHewitt";
+  src: url("fonts/CooperHewitt-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-color: #1b1f3a;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background: linear-gradient(to right, #1b1f3a, #2c3e50, #195363);
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+  padding: 60px;
+  /* position: fixed;
+  top: 0; */
+}
+
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial;
+  color: #ffffff;
+  padding: 10px 2em;
+  text-decoration: none;
+  
+}
+
+.main-nav a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  height: 2px; 
+  background: #ffb64a; 
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.main-nav a:hover{
+  color: #d6db8b;
+  font-weight: bold;
+  transform: translateY(-3px);
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.secondary-nav a:hover {
+  background-color: #ccccff;
+  color: black;
+}
+
+
+.container-container {
+  background: linear-gradient(135deg, #8e44ad, #f39c12);
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+  height: 1100px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  flex-shrink: 0;
+  border: 10px solid #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: auto;
+  
+}
+
+.table-container {
+  display: table;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  
+}
+
+.table-container th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 1.6em;
+  font-family: "CooperHewitt", Arial;
+  text-transform: uppercase;
+  color: #e17968;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+.table-container td {
+  font-weight: normal;
+  font-size: 1.6em;
+  font-family: "Sen", Arial;
+  color: #a2cde1;
+  padding: 0.9em;
+}
+
+.table-container td:first-child {
+  color: #dad8d8;
+}
+.table-container td:last-child {
+  color: #ebd6d6;
+}
+
+.table-container tr {
+  padding: 1em;
+  overflow: hidden;
+}
+
+.table-container tr:nth-child(odd) {
+  background-color: #323c50;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #2c3446;
+}
+
+.table-container th {
+  z-index: 4;
+  background-color: #1f2739;
+}
+
+.table-container td {
+  font-size: 1.6em;
+  transition: transform 0.5s ease, background-color 0.3s ease, color 1s ease;
+}
+
+.table-container td:hover {
+  background-color: #8d8b4b;
+  color: #302e10;
+  font-weight: bold;
+  position: relative;
+  z-index: 5;
+  transform: scale(1.2) translateY(-10px);
+  transition: transform 0.3s ease-in, background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.table-container td:first-child {
+  text-wrap: nowrap;
+}
+
+.table-container td:first-child:hover,
+.table-container td:last-child:hover {
+  transform: translateY(-10px);
+
+  transition: transform 0.3s ease-in, background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.computer-stand {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -30px;
+}
+
+.computer-stand::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #444;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.computer-stand-base {
+  width: 20%;
+  height: 30px;
+  bottom: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  width: 100%;
+  border-top: solid 5px transparent;
+  background: linear-gradient(to right, #1b1f3a, #2c3e50, #0e343e);
+  color: #ffffff;
+  font-family: "CooperHewitt", sans-serif;
+  font-size: 2.5rem;
+  padding: 4rem;
+  border-top: solid 5px rgba(226, 226, 123, 0.616);
+  border-bottom: solid 5px rgba(226, 226, 123, 0.616);
+  border-radius: 4px;
+}
+
+.header h2 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+
+
+.article-container {
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 3em;
+  color: wheat;
+}
+
+.article-container h2 {
+  font-size: 3em;
+  color: #e17968;
+  margin: 0 1.5em;
+  margin-top: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-left: 5px solid #d34e4e;
+  padding-left: 15px;
+}
+
+.article-container p {
+  font-family: "Montserrat", sans-serif; 
+  font-size: 1.8em;
+  margin: 0.6em 1em;
+  text-align: justify;
+  padding: 0.5em 2.2em;
+  line-height: 2;
+}
+
+.references {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8em;
+  color: #a79f9f;
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.references li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 3px solid #e17968;
+  background-color: #9393930f;
+  transition: background-color 0.3s ease;
+}
+
+.references li:hover {
+  background-color: #e4a25224;
+}
+
+.references a {
+  color: #e17968;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.references a:hover {
+  color: #9839b5;
+  text-decoration: underline;
+}
