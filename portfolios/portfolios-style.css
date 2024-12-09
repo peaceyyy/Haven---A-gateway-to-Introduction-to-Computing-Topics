@@ -228,6 +228,7 @@ nav a {
   text-wrap: nowrap;
   height: 10px;
   width: 100%;
+  text-transform: uppercase;
   border-top: solid 5px transparent;
   background: linear-gradient(to right, #1b1f3a, #2c3e50, #0e343e);
   color: #ffffff;
