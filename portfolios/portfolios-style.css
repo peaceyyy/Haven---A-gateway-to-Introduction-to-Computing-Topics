@@ -174,10 +174,10 @@ nav a {
 .arrow {
   cursor: pointer;
   height: 100px;
-  width: 10px; /* Fixed size */
+  width: 10px;
   position: absolute;
-  z-index: 10; /* Ensures it stays above other elements */
-  box-sizing: border-box; /* Ensures padding/borders don’t affect dimensions */
+  z-index: 10;
+  box-sizing: border-box;
   transition: transform 0.2s, opacity 0.2s;
   padding: 1em;
 }
@@ -185,15 +185,15 @@ nav a {
 .arrow-top,
 .arrow-bottom {
   background-color: #767676;
-  height: 2.5px; /* Fixed height for consistent rendering */
+  height: 2.5px;
   position: absolute;
-  width: 100%; /* Width remains relative to `.arrow` width */
-  top: 50%; /* Center in the arrow container */
-  transform-origin: center right; /* Consistent origin for rotation */
+  width: 100%;
+  top: 50%;
+  transform-origin: center right;
 }
 
 .arrow-top {
-  transform: rotate(45deg); /* Keep rotation stable */
+  transform: rotate(45deg);
 }
 
 .arrow-bottom {
@@ -202,22 +202,22 @@ nav a {
 
 .arrow-left {
   position: absolute;
-  left: 45px; /* Adds space from the left edge */
-  transform: rotate(180deg) translateY(-2.5px); /* Rotation for left arrow */
+  left: 45px;
+  transform: rotate(180deg) translateY(-2.5px);
 }
 
 .arrow-right {
   position: absolute;
-  right: 45px; /* Adds space from the right edge */
+  right: 45px;
 }
 
 .arrow-left:hover {
-  transform: rotate(180deg) scale(1.1) translateY(4px); /* Stable scaling */
+  transform: rotate(180deg) scale(1.1) translateY(4px);
 }
 
 .arrow-right:hover {
   
-  transform: scale(1.2) translateY(-4px); /* Stable scaling */
+  transform: scale(1.2) translateY(-4px);
 }
 
 
