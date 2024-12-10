@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap");
+
+@font-face {
+  font-family: "CooperHewitt";
+  src: url("fonts/CooperHewitt-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+body {
+   background-image: linear-gradient(to right, #081b29, #0a2a3d);
+  overflow-x: hidden;
+  font-family: "Open Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  background: linear-gradient(to right, #1b1f3a, #2c3e50, #195363);
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  padding: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial;
+  color: #ffffff;
+  padding: 10px 2em;
+  text-decoration: none;
+  
+}
+
+.main-nav a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  height: 2px; 
+  background: #ffb64a; 
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.main-nav a:hover{
+  color: #d6db8b;
+  font-weight: bold;
+  transform: translateY(-3px);
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.secondary-nav a:hover {
+  background-color: #ccccff;
+  color: black;
+}
+
+section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  gap: 100px;
+
+}
+
+
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 1000px;
+ 
+}
+
+.contact-text h1{
+  font-size: 6em;
+  font-weight: 600;
+  color: rgb(254, 254, 254);
+  animation: wipeRight 2s forwards;
+  margin-left: -2px;
+  
+}
+
+.contact-text h2 {
+  font-size: 3em;
+  font-weight: 400;
+  color: #4aaeff;
+  margin-bottom: 0.6em;
+  opacity: 0;
+  animation: wipeRight 2s forwards;
+  animation-delay: 0.5s;
+}
+
+
+.contact-text p {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  color: #ffffffea;
+  line-height: 1.9em;
+  opacity: 0;
+  animation: wipeRight 2s forwards;
+  animation-delay: 0.9s;
+}
+
+.contact-text p:nth-last-child(2){
+  margin-bottom: 1.5em;
+  opacity: 0;
+  animation: wipeRight 2s forwards;
+  animation-delay: 0.7s;
+}
+
+.know-more {
+  display: flex;
+  margin-top: 2em;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  opacity: 0;
+  animation: reveal 1s forwards;
+  animation-delay: 1.4s;
+  max-width: fit-content;
+}
+
+.know-more a {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  color: #ffb64a;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 2px solid #ffb64a;
+  border-radius: 5px;
+  transition: 1.5s;
+}
+
+.know-more a:hover  {
+  background-color: #ffb64a;
+  color: #081b29;
+  
+}
+
+@keyframes reveal {
+
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes wipeRight {
+  from {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.contact-img{
+    position: relative;
+    width: max-content;
+    z-index: 100;
+}
+
+
+.contact-img img{
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #2b2424;
+    z-index: 2;
+   
+}
+
+.contact-img .img-backdrop{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #2b2424;
+    opacity: 0.8;
+}
+.blinking{
+    content: "";
+    width: 105%;
+    height: 0.23em;
+    display: inline-block;
+    margin-top: 1em;
+    animation: blinking 3s infinite;
+    
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0.5em;
+    padding-left: 2em; 
+    color: white;
+}
+
+svg{
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+
+svg:hover{
+    transition: ease-in-out 0.3s;
+    transform: translateY(10.5px);
+    
+}
+
+.tooltip-container {
+    position: relative;
+
+}
+
+.tooltip-text {
+    font-family: "Open Sans";
+    width: 140px;
+    background-color: none;
+    border: rgb(247, 247, 247) 1px solid;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -170%; 
+    left: 50%;
+    padding: 0.4em;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.twitter:hover{
+  color: rgb(122, 255, 255);
+  
+}
+
+.twitter-tooltip{
+    border: rgb(122, 255, 255) 1px solid;
+}
+
+.facebook:hover{
+    color: rgb(57, 161, 230);
+  }
+
+.facebook-tooltip{
+    border: rgb(57, 161, 230) 1px solid;
+}
+  
+.github:hover{
+    color: rgb(205, 125, 245);
+  }
+
+.github-tooltip{
+    border: rgb(205, 125, 245) 1px solid;
+}   
+  
+
+@keyframes blinking {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color:  #e8e8e8;
+    }
+  }
+
+
+
+.combined{
+    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;}
