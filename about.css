@@ -20,9 +20,8 @@
   user-select: none;
 }
 
-
 body {
-   background-image: linear-gradient(to right, #081b29, #0a2a3d);
+  background-image: linear-gradient(to right, #081b29, #0a2a3d);
   overflow-x: hidden;
   font-family: "Open Sans";
 }
@@ -48,7 +47,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 nav li {
@@ -61,7 +59,6 @@ nav a {
   color: #ffffff;
   padding: 10px 2em;
   text-decoration: none;
-  
 }
 
 .main-nav a {
@@ -77,17 +74,17 @@ nav a {
 }
 
 .main-nav a::after {
-  content: '';
+  content: "";
   position: absolute;
-  height: 2px; 
-  background: #ffb64a; 
+  height: 2px;
+  background: #ffb64a;
   bottom: 0;
   left: 50%;
   width: 0;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.main-nav a:hover{
+.main-nav a:hover {
   color: #d6db8b;
   font-weight: bold;
   transform: translateY(-3px);
@@ -105,29 +102,25 @@ nav a {
 
 section {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  gap: 100px;
-
+  gap: 150px;
 }
 
-
-.contact-text{
+.contact-text {
   display: flex;
   flex-direction: column;
   color: white;
   max-width: 1000px;
- 
 }
 
-.contact-text h1{
+.contact-text h1 {
   font-size: 6em;
   font-weight: 600;
   color: rgb(254, 254, 254);
   animation: wipeRight 2s forwards;
   margin-left: -2px;
-  
 }
 
 .contact-text h2 {
@@ -140,7 +133,6 @@ section {
   animation-delay: 0.5s;
 }
 
-
 .contact-text p {
   font-family: "Montserrat";
   font-size: 1.5em;
@@ -151,7 +143,7 @@ section {
   animation-delay: 0.9s;
 }
 
-.contact-text p:nth-last-child(2){
+.contact-text p:nth-last-child(2) {
   margin-bottom: 1.5em;
   opacity: 0;
   animation: wipeRight 2s forwards;
@@ -178,21 +170,18 @@ section {
   padding: 0.5em 1em;
   border: 2px solid #ffb64a;
   border-radius: 5px;
-  transition: 1.5s;
+  transition: 0.4s;
 }
 
-.know-more a:hover  {
+.know-more a:hover {
   background-color: #ffb64a;
   color: #081b29;
-  
 }
 
 @keyframes reveal {
-
-  100%{
+  100% {
     opacity: 1;
   }
-  
 }
 
 @keyframes wipeRight {
@@ -206,129 +195,145 @@ section {
   }
 }
 
-.contact-img{
-    position: relative;
-    width: max-content;
-    z-index: 100;
+.contact-img {
+  position: relative;
+  width: max-content;
+  transform: translateY(50px);
+  z-index: 3;
+}
+
+.contact-img img {
+  display: block;
+  z-index: 2;
+  margin-right: -40px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.contact-img .img-backdrop {
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px #2b2424; 
+  transition: opacity 0.4s ease-in-out;
+
+}
+
+.contact-img:hover img {
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact-img:hover .campfire {
+  opacity: 1;
 }
 
 
-.contact-img img{
-    position: relative;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px #2b2424;
-    z-index: 2;
-   
+.campfire{
+  position: absolute;
+    top: 0;
+    width: 500px;
+    height: 600px;
+    z-index: 0;
+    opacity: 0;
+    transform: translate(-15%, -35%);
+
 }
 
-.contact-img .img-backdrop{
-    position: absolute;
-    top: -10px;
-    left: 15px;
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px #2b2424;
-    opacity: 0.8;
-}
-.blinking{
-    content: "";
-    width: 105%;
-    height: 0.23em;
-    display: inline-block;
-    margin-top: 1em;
-    animation: blinking 3s infinite;
-    
+.blinking {
+  content: "";
+  width: 117%;
+  height: 0.23em;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: -12px;
+  animation: blinking 3s infinite;
 }
 
-.socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 0.5em;
-    padding-left: 2em; 
-    color: white;
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  padding-left: 2em;
+  color: white;
 }
 
-svg{
-    color: white;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
+svg {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
 
-
-svg:hover{
-    transition: ease-in-out 0.3s;
-    transform: translateY(10.5px);
-    
+svg:hover {
+  transition: ease-in-out 0.3s;
+  transform: translateY(10.5px);
 }
 
 .tooltip-container {
-    position: relative;
-
+  position: relative;
 }
 
 .tooltip-text {
-    font-family: "Open Sans";
-    width: 140px;
-    background-color: none;
-    border: rgb(247, 247, 247) 1px solid;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 5px;
-    position: absolute;
-    bottom: -170%; 
-    left: 50%;
-    padding: 0.4em;
-    margin-left: -70px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  font-family: "Open Sans";
+  width: 140px;
+  background-color: none;
+  border: rgb(247, 247, 247) 1px solid;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -170%;
+  left: 50%;
+  padding: 0.4em;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
-.twitter:hover{
+.twitter:hover {
   color: rgb(122, 255, 255);
-  
 }
 
-.twitter-tooltip{
-    border: rgb(122, 255, 255) 1px solid;
+.twitter-tooltip {
+  border: rgb(122, 255, 255) 1px solid;
 }
 
-.facebook:hover{
-    color: rgb(57, 161, 230);
-  }
-
-.facebook-tooltip{
-    border: rgb(57, 161, 230) 1px solid;
+.facebook:hover {
+  color: rgb(57, 161, 230);
 }
-  
-.github:hover{
-    color: rgb(205, 125, 245);
-  }
 
-.github-tooltip{
-    border: rgb(205, 125, 245) 1px solid;
-}   
-  
+.facebook-tooltip {
+  border: rgb(57, 161, 230) 1px solid;
+}
+
+.github:hover {
+  color: rgb(205, 125, 245);
+}
+
+.github-tooltip {
+  border: rgb(205, 125, 245) 1px solid;
+}
 
 @keyframes blinking {
-    0%, 100% {
-        background-color: transparent;
-    }
-    50% {
-        background-color:  #e8e8e8;
-    }
+  0%,
+  100% {
+    background-color: transparent;
   }
+  50% {
+    background-color: #e8e8e8;
+  }
+}
 
-
-
-.combined{
-    box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;}
+.combined {
+  box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+}

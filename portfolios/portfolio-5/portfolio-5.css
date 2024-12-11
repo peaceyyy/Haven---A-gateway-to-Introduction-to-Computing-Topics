@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "CooperHewitt";
-  src: url("fonts/CooperHewitt-Book.otf") format("opentype");
+  src: url("../../fonts/CooperHewitt-Book.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,16 +50,15 @@ nav li {
   list-style: none;
 }
 
+
 nav a {
-  font-size: 1.5rem;
-  font-family: "Montserrat", Arial;
-  color: #ffffff;
+
   padding: 10px 2em;
-  text-decoration: none;
+  
   
 }
 
-.main-nav a {
+.main-nav a, .secondary-nav a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -71,7 +70,7 @@ nav a {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
-.main-nav a::after {
+.main-nav a::after, .secondary-nav a::after {
   content: '';
   position: absolute;
   height: 2px; 
@@ -88,14 +87,22 @@ nav a {
   transform: translateY(-3px);
 }
 
-.main-nav a:hover::after {
+.main-nav a:hover::after, .secondary-nav a:hover::after {
   width: 100%;
   left: 0;
 }
 
+.secondary-nav a::after {
+ 
+  background: #9e55fd; 
+
+}
+
+
 .secondary-nav a:hover {
-  background-color: #ccccff;
-  color: black;
+  color: #e26f27;
+  font-weight: bold;
+  transform: translateY(-3px);
 }
 
 .container-container {
@@ -204,7 +211,6 @@ nav a {
   position: sticky;
   top: 0;
   z-index: 1;
-  font-weight: bold;
   font-size: 1.6em;
   font-family: "CooperHewitt", Arial;
   text-transform: uppercase;
@@ -275,6 +281,7 @@ nav a {
 }
 
 .header {
+  font-family: "CooperHewitt", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,13 +291,43 @@ nav a {
   border-top: solid 5px transparent;
   background: linear-gradient(to right, #1b1f3a, #2c3e50, #0e343e);
   color: #ffffff;
-  font-family: "CooperHewitt", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.8em;
   padding: 2.5em;
   border-top: solid 5px rgba(226, 226, 123, 0.616);
   border-bottom: solid 5px rgba(226, 226, 123, 0.616);
   border-radius: 4px;
   
+}
+
+
+.header a {
+  font-size: 3em;
+  color: #e26f27;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.header a:hover {
+  color: #9e55fd;
+}
+
+.next-arrow {
+  position: absolute;
+  right: 40px;
+}
+
+.next-arrow:hover {
+  transform: translateX(20px);
+}
+
+.prev-arrow {
+  position: absolute;
+  left: 40px; 
+}
+
+.prev-arrow:hover {
+  transform: translateX(-20px);
 }
 
 .header h2 {
