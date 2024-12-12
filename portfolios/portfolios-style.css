@@ -234,7 +234,8 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-wrap: nowrap;
+  text-align: center;
+  /* text-wrap: nowrap; */
   height: 10px;
   width: 100%;
   text-transform: uppercase;
@@ -368,4 +369,22 @@ nav a {
 .references a:hover {
   color: #9839b5;
   text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: r;
+    padding: 20px;
+    height: auto;
+    width: 100vw;
+  }
+  
+  .main-nav a, .secondary-nav a {
+    font-size: 1.5em;
+    padding:  1em;
+    width: 100%;
+  }
+
+
 }

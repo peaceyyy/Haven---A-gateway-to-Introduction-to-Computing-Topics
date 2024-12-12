@@ -366,8 +366,8 @@ nav a {
   box-shadow: 0.35rem 0.35rem 0 hsl(var(--shadowColor) / 1);
   border: 0.5rem solid var(--theme-color);
   height: 50vh;
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
   scrollbar-width: none;
@@ -399,7 +399,7 @@ nav a {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .portfolio-img-wrapper {
@@ -537,5 +537,111 @@ nav a {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: r;
+    padding: 20px;
+    height: auto;
+    width: fit-content;
+  }
+
+  .main-nav a, .secondary-nav a {
+    font-size: 0.75rem;
+    padding: 10px 0.4em;
+  }
+
+  .carousel {
+    height: 600px;
+    margin-top: 80px;
+  }
+
+  .carousel-track img {
+    height: 600px;
+    width: 100vw;
+  }
+
+  .carousel .hero {
+    font-size: 2rem;
+  }
+
+  .carousel .hero > h1 {
+    font-size: 5rem;
+  }
+
+  .carousel .hero > p {
+    font-size: 1rem;
+    padding: 7px;
+  }
+
+  .portfolios-header {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  .portfolios-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    
+  }
+
+  .portfolio-card {
+    display: grid;
+    grid-template-areas: 
+        'card-right'
+        'card-left'; 
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 85vw;
+    transform: translateX(-8%);
+     
+  }
+
+  .portfolio-img-wrapper {
+    height: 500px;
+
+  }
+
+  
+.portfolio-img-wrapper img {
+  width: 100%; 
+  height: auto; 
+  
+}
+
+  .card-left {
+    grid-area: card-left;
+    height: fit-content;
+  }
+
+  .card-right {
+    grid-area: card-right;
+    border-left: none;   
+  }
+
+
+  .portfolio-title {
+    font-size: 2em;
+  }
+
+  .portfolio-details {
+    font-size: 1rem;
+  }
+
+  .portfolio-desc {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-details-overlay {
+    font-size: 1rem;
+    opacity: 0;
+  }
+
+  .watch-btn {
+    width: 100px;
+    font-size: 14px;
   }
 }
